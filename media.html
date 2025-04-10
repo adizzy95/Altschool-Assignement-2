@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>About Me</title>
+  </head>
+  <body>
+    <h1>Welcome to My Personal Page</h1>
+
+    <!-- Responsive Picture Element-->
+    <picture>
+      <source
+        media="(max-width: 600px)"
+        srcset="images/assignment-image-small.jpg"
+      />
+      <source
+        media="(max-width: 1024px)"
+        srcset="images/assignment-image-medium.jpg"
+      />
+      <source
+        media="(max-width: 1440px)"
+        srcset="images/assignment-image-large.jpg"
+      />
+      <source
+        media="(min-width: 1441px)"
+        srcset="images/assignment-image-xl.jpg"
+      />
+      <img src="./images/assignment-image.jpg" alt="My Photo" />
+    </picture>
+
+    <!-- Audio Element -->
+    <h2>My Message</h2>
+    <audio controls>
+      <source src="audio/my-message.mp3" type="audio/mp3" />
+    </audio>
+
+    <!-- Video Element -->
+    <h2>My Introduction Video</h2>
+    <video controls>
+      <source src="video/intro.mp4" type="video/mp4" />
+    </video>
+  </body>
+</html>
